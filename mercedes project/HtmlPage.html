@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="JavaScript.js"></script>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: verdana;
+            font-weight: normal;
+            font-size: 25px;
+        }
+
+        #logoId {
+            width: 200px;
+            height: 150px;
+            background-color: black;
+        }
+
+        .Button1 {
+            margin-left: 45px;
+            background-color: black;
+            color: white;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {
+                font-size: 11px
+            }
+        }
+    </style>
+    <title>Mercedes official website    </title>
+</head>
+<body onload="onload();">
+    <div style="border: 1px solid black; background-color:black;">
+        <img id="logoId" src="https://themarketingmixweb.files.wordpress.com/2016/11/mercedes_logo_10.jpg" alt="Alternate Text" />
+        <input class="Button1" type="button" onclick="CompanyFunction()" value="Company" />
+        <input class="Button1" type="button" onclick="VehiclesFunction()" value="Vehicles" />
+        <input class="Button1" type="button" onclick="DesignFunction()" value="Design" />
+        <input class="Button1" type="button" onclick="InnovationFunction()" value="Innovation" />
+        <input class="Button1" type="button" onclick="MuseumHistoryFunction()" value="Museum & History" />
+        <input class="Button1" type="button" onclick="SportsFunction()" value="Sports" />
+        <input class="Button1" type="button" onclick="EventsFunction()" value="Events" />
+        <input class="Button1" type="button" onclick="LifestyleFunction()" value="Lifestyle" />
+    </div>
+    <h2 style="text-align:center"><em>“Stronger Than Time”</em></h2>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="https://c4.wallpaperflare.com/wallpaper/387/485/272/mercedes-benz-g65-amg-mansory-wallpaper-preview.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="https://c4.wallpaperflare.com/wallpaper/616/403/742/mercedes-benz-amg-gt-s-2016-wallpaper-preview.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="https://c4.wallpaperflare.com/wallpaper/670/772/1012/mercedes-benz-mercedes-amg-gt-car-mercedes-sl-65-amg-wallpaper-preview.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="https://c4.wallpaperflare.com/wallpaper/224/232/970/mercedes-benz-mercedes-benz-sls-amg-mercedes-amg-petronas-car-wallpaper-thumb.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="https://c4.wallpaperflare.com/wallpaper/761/579/713/mercedes-benz-c43-amg-4matic-2019-cars-4k-wallpaper-preview.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="https://www.mercedes-benz.com/en/vehicles/passenger-cars/design-sketches/_jcr_content/root/slider/sliderchilditems/slideritem/image/MQ7-0-image-20200406093135/01-mercedes-benz-colouring-book-3400x1440-3.jpeg" style="width:100%">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <h4 style="margin-left:65px; color:aqua">And Now We Will Talk About Our Cars Comfort In A Video :</h4>
+    <video autoplay="autoplay" style="width:90%; height:500px; margin-left:65px; " controls id="video1">
+        <Source src="Mercedes-Benz.mp4" type="video/mp4" />
+
+    </video>
+
+
+    <br />
+    <div style="margin-left:50px;">
+
+
+        <h2 style="margin-left:15px; color:aqua">In this part of our website we will take you in a journy in our biggest stores around the world </h2><br />
+
+        <h5>our stores in Germany :</h5>
+        <p style="font-size:20px;">Munchin's store </p>
+        <img src="https://pbs.twimg.com/media/BJHeEhCCIAAIVUS.jpg" style="width:70%; margin-left:160px;" alt="Munchin" /><br />
+
+        <h5>Stuttgart's Museum</h5>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/MercedesMuseumStuttgart.JPG/1200px-MercedesMuseumStuttgart.JPG" style="width:70%; margin-left:160px;" alt="museum" /><br />
+
+        <br /><br />
+        <h4> Our store in Spain</h4>
+        <img src="https://images.akhbarelyom.com/images/images/large/20190119093000171.jpg" style="width:70%; margin-left:160px;" alt="spain" /><br />
+
+        <h4>Switzerland's Store </h4>
+        <img src="https://cars.sayidaty.net/sites/default/files/styles/800x470/public/hkdh_ql_lhm_lshrk_shkran.jpg?itok=16Pf1Tye" style="width:70%; margin-left:160px;" alt="switzerland" /><br />
+
+        <h4>Russian Store </h4>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Stuttgart%2C_Germany_%283431696457%29.jpg/1200px-Stuttgart%2C_Germany_%283431696457%29.jpg" style="width:70%; margin-left:160px;" alt="Russia" /><br />
+
+        <h4>Dubai's Store </h4>
+        <img src="https://www.innlebanon.com/CustomImage/get/728/380/946-30bb46851d.jpg" style="width:70%; margin-left:160px;" alt="Dubai" /><br />
+
+        <h4>U.S.A Store </h4>
+        <img src="https://striveme.com/img/article/8519/%D8%A7%D8%B3%D8%B9%D8%A7%D8%B1-%D9%85%D8%B1%D8%B3%D9%8A%D8%AF%D8%B3-%D8%A7%D9%84%D8%AC%D9%81%D8%A7%D9%84%D9%8A-2020.jpg" style="width:70%; margin-left:160px;" alt="USA" /><br />
+
+        <h4>Mercedes-Benz Stadium in USA </h4>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT2H0Fn0xq9QuZsUAn8ZC6hkx7ohbYYF0BslQ43HJSCmD-d_85B&usqp=CAU" style="width:70%; margin-left:160px;" alt="stadium" /><br />
+
+
+        <p style="font-size:20px;"> In the museum’s car park or in the P4 multistory car park. Parking fees: 1 Euro per hour for the first, second and third hour; 2 Euro per hour from the fourth hour. Present your parking ticket when shopping in our museum shops or visiting our restaurants and you will be granted one hour of free parking.</p>
+        <h4>Fascination to take away.</h4>
+
+        <p style="font-size:20px;">The Museum Shop in the passage of the Mercedes-Benz Museum fulfils every wish. To go shopping when you feel like it – even on Sundays and public holidays. On more than 500 square meters the Museum Shop offers you the world wide largest range of Mercedes-Benz products: Current fashion, countless high-quality model cars and fascinating literature about the history of Mercedes-Benz. Architecture and design can all be found here – as well as luxury watches, offers for children and a wide range of gifts bearing the famous Mercedes star. You need holiday items or motorsport equipment? In the Museum Shop, you’ll find it.</p> <h4>Alipay.</h4>
+
+        <p style="font-size:20px;">You are welcome to purchase your items in the Mercedes-Benz Museum by using Alipay.</p>
+        <p style="font-size:20px;">Alipay: to make Alipay payments, visitors must first connect to our free WiFi “Guest ConnectD”.</p>
+        <p style="font-size:20px;">The Mercedes-Benz Museum in Stuttgart celebrates the automobile invented by Carl Benz in 1886: it relates its history and tells its stories, bringing both alive by placing them in the context of technology, day-to-day life, social history and popular culture. More than 160 vehicles of all types are the main protagonists. They range from some of the oldest automobiles ever built to legendary racing cars and futuristic research vehicles.</p>
+        <p style="font-size:20px;">Together with other exhibits, they form the centrepiece of the permanent exhibition covering a total of 16,500 square metres in twelve rooms. This unparalleled world can be discovered on two tours that follow a “Legend” and “Collection” narrative.</p>
+        <p style="font-size:20px;">At Daimler, there is one thing that is a clear focus for us: people. Around 298,000 people from five generations and more than 150 nations work here. We look after them to make sure they feel at ease with us. </p>
+        <p style="font-size:20px;">For example we ensure that ideas quickly reach the top. How? By encouraging a culture of creativity and trust. We rely on the concept of co-creation: make their way to the top. But how? Through an open culture full of creativity and trust. We are building on the concept of co-creation: You will have the opportunity to thrive in diverse, interdisciplinary teams that allow you to play to your strengths and put forward your ideas freely. Let’s learn from and connect with each other. </p>
+        <p style="font-size:20px;">There are many benefits at Daimler - from flexible work time models, international assignments and individual personal development opportunities to a diverse health and sports program and an attractive salary with special benefits. You will find more information on the topic of Culture & Benefits here. </p><br />
+
+        <h5>
+            <em> Welcome to the Mercedes-Benz international website.</em>
+        </h5>
+        <p style="font-size:11px;">Exclusive reports and current films: experience a broad range of topics from the fascinating world of Mercedes-Benz.</p>
+        <p style="font-size:11px;"> To find out about offers in your location, please go to the local Mercedes-Benz website</p>
+        <p style="font-size:11px;">This is the International website of Mercedes-Benz AG.</p>
+    </div>
+
+
+
+
+
+</body>
+</html>
+
+<script>
+
+    function onload() {
+        plusSlides(0);
+    }
+
+</script>

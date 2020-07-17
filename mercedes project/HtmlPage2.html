@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="JavaScript.js"></script>
+    <meta charset="utf-8" />
+    <title>Mercedes Vehicles</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: verdana;
+            font-weight: normal;
+            font-size: 25px;
+        }
+
+
+        .column {
+            float: left;
+            width: 30%;
+            padding: 5px;
+            margin-left: 30px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+        #logoId {
+            width: 200px;
+            height: 150px;
+            background-color: black;
+        }
+
+        .CarsNames {
+            font-size: 25px;
+            margin-left: 30px;
+            color:aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="border: 1px solid black;
+        background-color: black;
+">
+        <img id="logoId" src="https://themarketingmixweb.files.wordpress.com/2016/11/mercedes_logo_10.jpg" alt="Alternate Text" />
+    </div>
+
+    <br /><br />
+    <h3 style="margin-left:350px; font-family:'Times New Roman', Times, serif; font-size:xx-large;">Some Of Our Famous Vehicles Around The Wolrd </h3>
+    <br /><br />
+
+    <h4 class="CarsNames">Unique Cars :</h4>
+    <div class="row">
+        <div class="column">
+            <img src="https://cdn.carbuzz.com/gallery-images/2020-mercedes-benz-c-class-coupe-front-view-carbuzz-589838.jpg" onclick="CPropFunction()" onmousemove="CFunction(this)" onmouseout="cClassFunction(this)" alt="C-Class" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://carimages.com.au/dDgdu-VFz98fhlRTiX1_G_Bed9I=/fit-in/800x600/filters:stretch(FFFFFF)/vehicles/redbook/S00031KJ.jpg" onclick="EPropFunction()" onmousemove="EFunction(this)" onmouseout="eClassFunction(this)" alt="E-Class" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://gtspirit.com/wp-content/uploads/2014/12/16042416591495965571.jpg" onclick="SPropFunction()" onmousemove="SFunction(this)" onmouseout="sClassFunction(this)" alt="S-Class" style="        width: 100%
+">
+        </div>
+    </div>
+
+    <h4 class="CarsNames">High cars :</h4>
+    <div class="row">
+        <div class="column">
+            <img src="https://www.la.mercedes-benz.com/en/passengercars/mercedes-benz-cars/models/glc/coupe-c253/design/lines/_jcr_content/swipeableteaserbox/par/swipeableteaser/asset.MQ6.12.20190619154733.jpeg" onclick="GLCPropFunction()" onmousemove="glcFunction(this)" onmouseout="GlCFunction(this)" alt="" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://www.ccarprice.com/products/Mercedes-GLE-350-4MATIC-SUV-2020.jpg" onclick="GLEPropFunction()" onmousemove="gleFunction(this)" onmouseout=" GLEFunction(this)" alt="" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://aws-images.carshop.co.uk/NX/17/NX17LXB/NX17LXB-used-MERCEDES-BENZ-A-CLASS-DIESEL-HATCHBACK-A200d-AMG-Line-Premium-5dr-Auto-diesel-RED-2017-DC1-HH-M-01.jpg" onclick="APropFunction()" onmousemove="aFunction(this)" onmouseout="AClassFunction(this)" alt="" style="width:100%">
+        </div>
+    </div>
+
+    <h4 class="CarsNames">Tough cars :</h4>
+    <div class="row">
+        <div class="column">
+            <img src="https://redbook.pxcrush.net/redbook/car/spec/S00069WU.jpg?height=292&padcolor=ffffff&aspect=FitWithin&width=440" onclick="XPropFunction()" onmousemove="xTwoFunction(this)" onmouseout="XTWOFunction(this)" alt="" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://i.pinimg.com/564x/af/f9/8e/aff98eacab9db5ff81d858f411041852.jpg" onclick="GPropFunction()" onmousemove="gClassunction(this)" onmouseout=" GClassFunction(this)" alt="" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://www.mdiecast.com/mpictures/autoart/76304_1.jpg" onclick="TruckPropFunction()" onmousemove="truckFunction(this)" onmouseout="TruckClassFunction(this)" alt="" style="width:100%">
+        </div>
+    </div>
+
+    <h4 class="CarsNames">Sport cars :</h4>
+    <div class="row">
+        <div class="column">
+            <img src="https://www.chicagomotorcars.com/imagetag/5441/29/l/Used-2018-Mercedes-Benz-AMG-GT-C-Roadster.jpg" onclick="GTSPropFunction()" onmousemove="gtsFunction(this)" onmouseout="GTSFunction(this)" alt="" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTpjoKg395E0N9I0kuQnTzHPHCsu9ENb4YgATvxkBIwEA-mcRC5&usqp=CAU" onclick="SLRPropFunction()" onmousemove="slrFunction(this)" onmouseout=" SLRFunction(this)" alt="" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuj3vfu-1J7QTfKPYSWENFsnPQiHsmN4CnYoiWPMNAdazBNst-&usqp=CAU" onclick="SLSPropFunction()" onmousemove="slsFunction(this)" onmouseout="SLSClassFunction(this)" alt="" style="width:100%">
+        </div>
+    </div>
+</body>
+</html>
